@@ -23,7 +23,7 @@ if __name__ == '__main__':
     test_2 = simpledialog.askinteger(title='test_2',prompt='what was the score for your second test?')
     # TODO) Take the average score of both tests (total score / 2)
     average=(test_1+test_2)/2
-    if average>89.5 and average<100:
+    if average>89.5 and average<101:
         messagebox.showinfo(title='wow!', message='Wow! You must have studied really hard for those tests!')
     elif average<89.5 and average>79.5:
         messagebox.showinfo(title='ok',message='ok, I guess.')
@@ -33,7 +33,7 @@ if __name__ == '__main__':
         messagebox.showinfo(title='ok?',message='you are starting to disappoint...')
     elif average<69.5 and average>59.5:
         messagebox.showinfo(title='maybe get better',message='please study more')
-    elif average<59.5 and average>0:
+    elif average<59.5 and average>-1:
         messagebox.showinfo(title='you should study, now!',message='go get studying')
     elif average<0:
         messagebox.showinfo(title='tou are failure supreme',message='a negative score? Wow just wow.')
